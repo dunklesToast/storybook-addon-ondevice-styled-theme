@@ -1,0 +1,41 @@
+{
+  "name": "storybook-addon-ondevice-styled-theme",
+  "version": "0.0.1",
+  "description": "A react-native storybook addon to use themes with styled-components",
+  "keywords": [
+    "addon",
+    "theme",
+    "react",
+    "react-native",
+    "styled-components",
+    "storybook"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist/"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/h-des/storybook-addon-ondevice-styled-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h-des/storybook-addon-ondevice-styled-theme.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@storybook/addons": "*",
+    "react": "*",
+    "react-native": "*",
+    "styled-components": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
