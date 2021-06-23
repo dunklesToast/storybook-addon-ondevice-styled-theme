@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-ondevice-styled-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react-native storybook addon to use themes with styled-components",
   "keywords": [
     "addon",

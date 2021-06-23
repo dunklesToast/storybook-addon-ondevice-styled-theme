@@ -1,6 +1,7 @@
 import React from 'react'
 import Events from './constants'
 import { ThemeProvider } from 'styled-components'
+import { View } from "react-native";
 
 class Wrapper extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class Wrapper extends React.Component {
     const { theme } = this.state
     const { children } = this.props
 
-    return <ThemeProvider theme={theme}><View style={{ backgroundColor: theme['600'] }}>{children}</View></ThemeProvider>
+    return <ThemeProvider theme={theme}><View style={{ backgroundColor: theme ? theme['600'] : 'white' }}>{children}</View></ThemeProvider>
   }
 }
 

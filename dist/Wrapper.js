@@ -11,6 +11,8 @@ var _constants = _interopRequireDefault(require("./constants"));
 
 var _styledComponents = require("styled-components");
 
+var _reactNative = require("react-native");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -76,9 +78,9 @@ function (_React$Component) {
       var children = this.props.children;
       return _react.default.createElement(_styledComponents.ThemeProvider, {
         theme: theme
-      }, _react.default.createElement(View, {
+      }, _react.default.createElement(_reactNative.View, {
         style: {
-          backgroundColor: theme['600']
+          backgroundColor: theme ? theme['600'] : 'white'
         }
       }, children));
     }
